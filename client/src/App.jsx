@@ -1,12 +1,19 @@
 // import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import axios from "axios";
 import "./App.css";
+// import Home from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
+axios.defaults.baseURL = "http://localhost:4000";
 
 const LayOut = () => {
-  return <header></header>;
+  return (
+    <>
+      <Outlet />
+    </>
+  );
 };
 
 const router = createBrowserRouter([
@@ -18,6 +25,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/login",
+        element: <Home />,
+      },
     ],
   },
 ]);
@@ -25,7 +36,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <>
-      <Home />
+      <RouterProvider router={router} />
     </>
   );
 };
