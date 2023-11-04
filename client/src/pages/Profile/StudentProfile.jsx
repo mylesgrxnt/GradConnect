@@ -1,5 +1,7 @@
 import "./StudentProfile.css";
 import homePhoto from "./home.png"
+import networkPhoto from "./network.png"
+import profilePhoto from "./profile.jpg"
 
 const StudentProfile = () => {
   return (
@@ -13,10 +15,12 @@ function About() {
   return (
     <>
       <div className="w-75 topnav">
-        <img src={homePhoto} className="home"/>
-        <text href="#news">News</text>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <img src={homePhoto} className="photos"/>
+        <input className="name" defaultValue="Name"/>
+        <input className="name" defaultValue="Name"/>
+        <input className="name" defaultValue="Name"/>
+        <img src={networkPhoto} className="photos"/>
+        <img src={profilePhoto} className="photos"/>
       </div>
     </>
   );
