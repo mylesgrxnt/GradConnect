@@ -12,8 +12,8 @@ const StudentProfile = () => {
 function About() {
   return (
     <>
-      <div classname="topnav">
-        <a classname="home"><img src={homePhoto} classname="home"></img></a>
+      <div className="topnav">
+        <img src={homePhoto} className="home"><a></a></img>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
