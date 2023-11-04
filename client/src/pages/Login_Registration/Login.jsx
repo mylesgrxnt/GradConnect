@@ -3,12 +3,12 @@ import "./Login.css";
 const Login = () => {
   return (
     <main className="login-main">
-      <About />
+      <Login_Header />
     </main>
   );
 };
 
-function About() {
+function Login_Header() {
   return (
     <>
       <h1>Login Page</h1>

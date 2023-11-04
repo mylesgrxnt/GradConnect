@@ -11,7 +11,7 @@ const MentorProfile = () => {
 function About() {
   return (
     <>
-      <h1>High School Networking App</h1>
+      <h1>This is a Mentor Profile</h1>
     </>
   );
 }
