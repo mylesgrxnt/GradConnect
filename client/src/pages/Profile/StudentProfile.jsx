@@ -12,9 +12,9 @@ const StudentProfile = () => {
 function About() {
   return (
     <>
-      <div className="topnav">
-        <img src={homePhoto} className="home"><a></a></img>
-        <a href="#news">News</a>
+      <div className="w-75 topnav">
+        <img src={homePhoto} className="home"/>
+        <text href="#news">News</text>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
       </div>
