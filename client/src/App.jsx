@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Profile/StudentProfile";
 
 const LayOut = () => {
   return <header></header>;
