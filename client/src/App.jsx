@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import viteLogo from "/vite.svg";
 import axios from "axios";
 import "./App.css";
-import Home from "./pages/Profile/StudentProfile";
+import Profile from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
 axios.defaults.baseURL = "http://localhost:3000";
 
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/login",
-        element: <Home />,
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
