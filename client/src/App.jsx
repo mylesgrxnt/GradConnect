@@ -7,13 +7,14 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Registration from "./pages/Login_Registration/Registration";
 import Search from "./pages/Search/Search";
+import UserProvider from "./utils/UserProvider";
 axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
   return (
-    <>
+    <UserProvider>
       <Outlet />
-    </>
+    </UserProvider>
   );
 };
 
@@ -26,10 +27,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
+      // {
+      //   path: "/profile",
+      //   element: <Profile />,
+      // },
       {
         path: "/register",
         element: <Registration />,

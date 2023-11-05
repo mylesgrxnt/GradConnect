@@ -23,7 +23,7 @@ const Home = () => {
 function About() {
   return (
     <>
-      <h1 class="text-muted">High School Networking App</h1>
+      <h1 className="text-muted">High School Networking App</h1>
     </>
   );
 }
