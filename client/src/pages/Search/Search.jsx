@@ -11,94 +11,124 @@ const Search = () => {
 
 function Search_Page() {
   return (
-    <section class=" h-100 search-page container my-4 ms-2 me-4 rounded-3 col-8 p-3 justify-content-between">
+    <section class="h-100 search-page container my-4 ms-2 me-4 rounded-3 col-8 p-3 justify-content-between">
       <div class="d-flex justify-content-between">
-        <p>Showing <b>6</b> Results</p> 
-        <p>Sort by: <b>Alphabetical</b></p>
+        <div class="d-flex align-items-center">
+          <p>Showing <b>6</b> Results</p> 
+        </div>
+        <div class="d-flex align-items-center">
+          <p>Sort by: </p>
+          <button type="submit" class="btn"><b>Alphabetical</b></button>
+        </div>
       </div>
 
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
-        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
-        <div class="text-container">
-          <p class="p-0 m-0">First Last, <br />
+        <img class="rounded-circle" src="https://picsum.photos/id/64/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
-        <div class="text-container">
-          <p class="p-0 m-0">Boston,<br />
-          Massachusetts</p>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>Essay Reading</b><br />
+          <b>General Advice</b></p>
         </div>
-        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
-          <p class="px-5 py-3 m-0">Computer Science</p>
-        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
       </div>
 
       <hr />
 
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
-        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
-        <div class="text-container">
-          <p class="p-0 m-0">First Last, <br />
+        <img class="rounded-circle" src="https://picsum.photos/id/65/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
-        <div class="text-container">
-          <p class="p-0 m-0">Boston,<br />
-          Massachusetts</p>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>All</b></p>
         </div>
-        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
-          <p class="px-5 py-3 m-0">Computer Science</p>
-        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
       </div>
 
       <hr />
 
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
-        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
-        <div class="text-container">
-          <p class="p-0 m-0">First Last, <br />
+        <img class="rounded-circle" src="https://picsum.photos/id/342/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
-        <div class="text-container">
-          <p class="p-0 m-0">Boston,<br />
-          Massachusetts</p>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>Essay Reading</b><br />
+          <b>General Advice</b></p>
         </div>
-        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
-          <p class="px-5 py-3 m-0">Computer Science</p>
-        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
       </div>
 
       <hr />
 
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
-        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
-        <div class="text-container">
-          <p class="p-0 m-0">First Last, <br />
+        <img class="rounded-circle" src="https://picsum.photos/id/177/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
-        <div class="text-container">
-          <p class="p-0 m-0">Boston,<br />
-          Massachusetts</p>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>Essay Reading</b><br />
+          <b>General Advice</b></p>
         </div>
-        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
-          <p class="px-5 py-3 m-0">Computer Science</p>
-        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
       </div>
 
       <hr />
 
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
-        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
-        <div class="text-container">
-          <p class="p-0 m-0">First Last, <br />
+        <img class="rounded-circle" src="https://picsum.photos/id/331/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
-        <div class="text-container">
-          <p class="p-0 m-0">Boston,<br />
-          Massachusetts</p>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>Essay Reading</b><br />
+          <b>General Advice</b></p>
         </div>
-        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
-          <p class="px-5 py-3 m-0">Computer Science</p>
-        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
       </div>
+
+      <hr />
+
+      <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
+        <img class="rounded-circle" src="https://picsum.photos/id/338/90/90"/>
+        <div class="text-container col-4">
+          <p class="p-0 m-0 lh-1">First Last, <br />
+          Student at <b>Boston College</b></p>
+        </div>
+        <div class="col-2">
+          <p class="lh-1">Open to: <br />
+          <b>Essay Reading</b><br />
+          <b>General Advice</b></p>
+        </div>
+        <button type="submit" class="btn btn-xl btn-primary ">
+          <p class="m-0">Connect</p>
+        </button>
+      </div>
+
+      <hr />
+      
     </section>
   );
 }
@@ -106,7 +136,7 @@ function Search_Page() {
 function Filters() {
   return (
     <section class="filters container my-4 ms-4 me-2 rounded-3 col-3 p-3 h-75">
-      <h2>Add Filters</h2>
+      <button type="submit" class="btn btn-primary btn-lg">Apply Filters</button>
       <hr />
       <div className="active-filters container">
         <h3>Active Filters</h3>
@@ -140,7 +170,7 @@ function Filters() {
             <label class="form-check-label" for="exampleCheck1">Video Calling</label>
           </li>
         </ul>
-      </div>   
+      </div> 
     </section>
   )
 }

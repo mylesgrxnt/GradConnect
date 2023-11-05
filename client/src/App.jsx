@@ -8,10 +8,13 @@ import {
 import { ToastContainer } from "react-toastify";
 import axios from "axios";
 import "./App.css";
+import Header from "./pages/Header/Header";
+import Profile from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
 import Registration from "./pages/Login_Registration/Registration";
-import Navbar from "./components/Navbar";
 import Search from "./pages/Search/Search";
+import MentorProfile from "./pages/Profile/MentorProfile";
+import Registration_Info from "./pages/Login_Registration/RegistrationInfo";
 import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
 import AfterLogin from "./utils/AfterLogin";
@@ -23,10 +26,9 @@ const LayOut = () => {
   const { isAuthenticated } = useAuth0();
   return (
     <>
-      <header>
-        <Navbar />
-        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
-      </header>
+      <div className="top-header">
+        <header>{isAuthenticated ? <LogoutButton /> : <LoginButton />}</header>
+      </div>
       <ToastContainer />
       <Outlet />
       <AfterLogin />
@@ -36,17 +38,16 @@ const LayOut = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <LayOut />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "/profile",
-      //   element: <Profile />,
-      // },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
       {
         path: "/register",
         element: <Registration />,
@@ -56,8 +57,12 @@ const router = createBrowserRouter([
         element: <Search />,
       },
       {
-        path: "/login",
-        element: <Search />,
+        path: "/mentorProfile",
+        element: <MentorProfile />,
+      },
+      {
+        path: "/registration_info",
+        element: <Registration_Info />,
       },
     ],
   },
