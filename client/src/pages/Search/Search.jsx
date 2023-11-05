@@ -2,7 +2,7 @@ import "./Search.css";
 
 const Search = () => {
   return (
-    <main className="search-main d-flex">
+    <main className="search-main d-flex h-100">
       <Filters />
       <Search_Page />
     </main>
@@ -11,7 +11,7 @@ const Search = () => {
 
 function Search_Page() {
   return (
-    <section class="search-page container my-4 ms-2 me-4 rounded-3 col-8 p-3 justify-content-between">
+    <section class=" h-100 search-page container my-4 ms-2 me-4 rounded-3 col-8 p-3 justify-content-between">
       <div class="d-flex justify-content-between">
         <p>Showing <b>6</b> Results</p> 
         <p>Sort by: <b>Alphabetical</b></p>
@@ -27,19 +27,85 @@ function Search_Page() {
           <p class="p-0 m-0">Boston,<br />
           Massachusetts</p>
         </div>
-        <div class="major border rounded-3 d-flex align-items-center">
-          <p class="p-0">Computer Science</p>
+        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
+          <p class="px-5 py-3 m-0">Computer Science</p>
         </div>
       </div>
 
       <hr />
+
+      <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
+        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
+        <div class="text-container">
+          <p class="p-0 m-0">First Last, <br />
+          Student at <b>Boston College</b></p>
+        </div>
+        <div class="text-container">
+          <p class="p-0 m-0">Boston,<br />
+          Massachusetts</p>
+        </div>
+        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
+          <p class="px-5 py-3 m-0">Computer Science</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
+        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
+        <div class="text-container">
+          <p class="p-0 m-0">First Last, <br />
+          Student at <b>Boston College</b></p>
+        </div>
+        <div class="text-container">
+          <p class="p-0 m-0">Boston,<br />
+          Massachusetts</p>
+        </div>
+        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
+          <p class="px-5 py-3 m-0">Computer Science</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
+        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
+        <div class="text-container">
+          <p class="p-0 m-0">First Last, <br />
+          Student at <b>Boston College</b></p>
+        </div>
+        <div class="text-container">
+          <p class="p-0 m-0">Boston,<br />
+          Massachusetts</p>
+        </div>
+        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
+          <p class="px-5 py-3 m-0">Computer Science</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
+        <img class="rounded-circle" src="https://picsum.photos/90/90"/>
+        <div class="text-container">
+          <p class="p-0 m-0">First Last, <br />
+          Student at <b>Boston College</b></p>
+        </div>
+        <div class="text-container">
+          <p class="p-0 m-0">Boston,<br />
+          Massachusetts</p>
+        </div>
+        <div class="major bg-primary rounded-3 d-flex align-items-center me-2">
+          <p class="px-5 py-3 m-0">Computer Science</p>
+        </div>
+      </div>
     </section>
   );
 }
 
 function Filters() {
   return (
-    <section class="filters container my-4 ms-4 me-2 rounded-3 col-3 p-3">
+    <section class="filters container my-4 ms-4 me-2 rounded-3 col-3 p-3 h-75">
       <h2>Add Filters</h2>
       <hr />
       <div className="active-filters container">
