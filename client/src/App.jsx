@@ -1,35 +1,85 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  useNavigate,
+} from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import axios from "axios";
+import "./App.css";
+import Header from "./pages/Header/Header";
+import LoggedInHome from "./pages/Home/LoggedInHome";
+import Profile from "./pages/Profile/StudentProfile";
+import Home from "./pages/Home/Home";
+import Registration from "./pages/Login_Registration/Registration";
+import Search from "./pages/Search/Search";
+import MentorProfile from "./pages/Profile/MentorProfile";
+import Registration_Info_Mentor from "./pages/Login_Registration/RegistrationInfoMentor";
+import Registration_Info_Student from "./pages/Login_Registration/RegistrationInfoStudent";
+import AfterLogin from "./utils/AfterLogin";
+import { useAuth0 } from "@auth0/auth0-react";
 
-function App() {
-  const [count, setCount] = useState(0)
+axios.defaults.baseURL = "http://localhost:3000";
 
+const LayOut = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="top-header">
+        <Header />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ToastContainer />
+      <Outlet />
+      <AfterLogin />
     </>
-  )
-}
+  );
+};
 
-export default App
+const router = createBrowserRouter([
+  {
+    element: <LayOut />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/landing",
+        element: <LoggedInHome />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/register",
+        element: <Registration />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
+      },
+      {
+        path: "/mentorProfile",
+        element: <MentorProfile />,
+      },
+      {
+        path: "/registration_info_mentor",
+        element: <Registration_Info_Mentor />,
+      },
+      {
+        path: "/registration_info_student",
+        element: <Registration_Info_Student />,
+      },
+    ],
+  },
+]);
+
+const App = () => {
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
+};
+
+export default App;

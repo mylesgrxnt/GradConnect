@@ -1,0 +1,54 @@
+main{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+body {
+    width: 100vw;
+    background-color: whitesmoke;
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.logo {
+    font-size: 100px;
+}
+
+
+.bg-white {
+    background-color: white;
+}
+
+.names{
+    font-size: 20px;
+}
+
+.last-online {
+    font-weight: 300;
+
+}
+
+.open-to-icons div {
+    transition: all .2s ease-in-out;
+}
+.open-to-icons div:hover {
+    
+    background-color: #f5f6ff;
+}
+
+.text-container {
+    
+    height: max-content;
+}
+
+#search-bar input {
+    height: 100px;
+    width: 50px;
+}
+

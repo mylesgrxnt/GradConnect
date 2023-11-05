@@ -1,0 +1,8 @@
+// Override default variables before the import
+$theme-colors: (
+  "primary": #DEE2FF,
+  "secondary": #EFD3D7,
+);
+
+// Import Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
