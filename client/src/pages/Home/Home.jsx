@@ -11,7 +11,7 @@ const Home = () => {
 function About() {
   return (
     <>
-      <h1>High School Networking App</h1>
+      <h1 class="text-muted">High School Networking App</h1>
     </>
   );
 }

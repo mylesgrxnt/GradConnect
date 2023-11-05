@@ -6,6 +6,8 @@ import axios from "axios";
 import "./App.css";
 import Profile from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
+import Registration from "./pages/Login_Registration/Registration";
+import Search from "./pages/Search/Search";
 axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/register",
+        element: <Registration />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
       },
     ],
   },
