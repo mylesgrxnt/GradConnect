@@ -23,12 +23,7 @@ const Home = () => {
 function About() {
   return (
     <>
-<<<<<<< HEAD
-      <h1>High School Networking App</h1>
-      <button onClick={handleLogin}>Login</button>
-=======
       <h1 class="text-muted">High School Networking App</h1>
->>>>>>> dad267bbb9be5da602db114af8b43d29d6656e27
     </>
   );
 }

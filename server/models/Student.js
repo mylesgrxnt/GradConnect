@@ -10,6 +10,7 @@ const StudentSchema = new Schema(
       default: 2023,
     },
     major: [String],
+    reqInfoSet: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
