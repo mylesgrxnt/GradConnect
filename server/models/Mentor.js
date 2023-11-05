@@ -3,12 +3,18 @@ const { Schema } = mongoose;
 
 const MentorSchema = new Schema(
   {
+    studentName: { type: String, unique: true },
     email: { type: String, unique: true },
     gradYear: {
       type: Number,
       default: 2010,
     },
+    authZeroId: { type: String, unique: true },
+    college: [String],
     major: [String],
+    openTo: [String],
+    region: String,
+    isProfileComplete: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

@@ -15,19 +15,16 @@ import Registration from "./pages/Login_Registration/Registration";
 import Search from "./pages/Search/Search";
 import MentorProfile from "./pages/Profile/MentorProfile";
 import Registration_Info from "./pages/Login_Registration/RegistrationInfo";
-import LoginButton from "./components/LoginButton";
-import LogoutButton from "./components/LogoutButton";
 import AfterLogin from "./utils/AfterLogin";
 import { useAuth0 } from "@auth0/auth0-react";
 
 axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
-  const { isAuthenticated } = useAuth0();
   return (
     <>
       <div className="top-header">
-        <header>{isAuthenticated ? <LogoutButton /> : <LoginButton />}</header>
+        <Header />
       </div>
       <ToastContainer />
       <Outlet />
