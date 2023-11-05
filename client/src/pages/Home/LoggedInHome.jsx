@@ -3,19 +3,9 @@ import axios from "axios";
 import mentorIcon from "./mentoring.png";
 import videoIcon from "./cam-recorder.png";
 import essayIcon from "./wirte.png";
+import { useAuth0 } from "@auth0/auth0-react";
 
-const handleLogin = () => {
-  axios
-    .get("/profile", { withCredentials: true })
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-};
-
-const Home = () => {
+const LoggedInHome = () => {
   return (
     <main className="home-main">
       <About />
@@ -29,7 +19,7 @@ function About() {
       <section class="w-100 d-inline-block text-center align-items-center">
         <div class="pt-5 m-5 d-flex justify-content-center">
           <div>
-            <h1 class="logo ">Grad Connect</h1>
+            <h1 class="logo ">Welcome back, Myles</h1>
           </div>
         </div>
         <br />
@@ -450,4 +440,4 @@ function About() {
   );
 }
 
-export default Home;
+export default LoggedInHome;

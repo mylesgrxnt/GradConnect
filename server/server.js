@@ -53,6 +53,25 @@ app.get("/api/user/get", jwtCheck, async (req, res) => {
   }
 });
 
+app.post("/api/student/update", jwtCheck, async (req, res) => {
+  try {
+    const { name, major, region } = req.body;
+    const authZeroId = req.auth.payload.sub;
+    const updatedUser = await User.findByIdAndUpdate(
+      { authZeroId },
+      { $set: { name, major, region } },
+      { new: true }
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.json(updatedUser);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 app.use((req, res, next) => {
   const error = new Error("Not found");
   error.status = 404;

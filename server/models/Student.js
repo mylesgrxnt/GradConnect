@@ -13,6 +13,7 @@ const StudentSchema = new Schema(
     major: [String],
     region: String,
     isProfileComplete: { type: Boolean, default: false },
+    isMentor: { type: Boolean, default: true },
   },
   { timestamps: true }
 );

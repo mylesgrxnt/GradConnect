@@ -16,11 +16,15 @@ const AfterLogin = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        // if (res.data.isProfileComplete) {
-        //   navigate("/home");
-        // } else {
-        //   navigate("/setprofile");
-        // }
+        if (!res.data.isProfileComplete && res.data.isMentor) {
+          navigate("/registration_info_mentor");
+        } else if (!res.data.isProfileComplete && !res.data.isMentor) {
+          navigate("/registration_info_student");
+        } else if (res.data.isProfileComplete) {
+          navigate("/landing");
+        } else {
+          navigate("/");
+        }
       } catch (error) {
         console.error(error.message || "Login required");
       }

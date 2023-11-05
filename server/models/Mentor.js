@@ -15,6 +15,7 @@ const MentorSchema = new Schema(
     openTo: [String],
     region: String,
     isProfileComplete: { type: Boolean, default: false },
+    isMentor: { type: Boolean, default: true },
   },
   { timestamps: true }
 );
