@@ -3,7 +3,7 @@ import axios from "axios";
 
 const handleLogin = () => {
   axios
-    .get("/")
+    .get("/profile", { withCredentials: true })
     .then((response) => {
       console.log(response.data);
     })

@@ -6,7 +6,7 @@ import axios from "axios";
 import "./App.css";
 // import Home from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
   return (
