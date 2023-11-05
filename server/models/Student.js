@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const StudentSchema = new Schema(
   {
-    studentName: { type: String, unique: true },
+    studentName: String,
     email: { type: String, unique: true },
     gradYear: {
       type: Number,
