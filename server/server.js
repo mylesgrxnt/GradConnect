@@ -55,13 +55,15 @@ app.get("/api/user/get", jwtCheck, async (req, res) => {
 
 app.post("/api/student/update", jwtCheck, async (req, res) => {
   try {
+    console.log("hi");
     const { name, major, region } = req.body;
     const authZeroId = req.auth.payload.sub;
-    const updatedUser = await User.findByIdAndUpdate(
+    const updatedUser = await StudentModel.findOneAndUpdate(
       { authZeroId },
-      { $set: { name, major, region } },
+      { $set: { name, major, region, isProfileComplete: true } },
       { new: true }
     );
+    console.log("user updated!!");
 
     if (!updatedUser) {
       return res.status(404).json({ message: "User not found" });

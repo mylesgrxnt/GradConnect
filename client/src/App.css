@@ -12,3 +12,8 @@
 .top-header nav {
   background: white;
 }
+
+p {
+  font-size: medium !important;
+  line-height: 30px !important;
+}

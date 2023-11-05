@@ -6,20 +6,13 @@ import essayIcon from "./wirte.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LoggedInHome = () => {
+  const { user } = useAuth0();
   return (
     <main className="home-main">
-      <About />
-    </main>
-  );
-};
-
-function About() {
-  return (
-    <>
       <section class="w-100 d-inline-block text-center align-items-center">
         <div class="pt-5 m-5 d-flex justify-content-center">
           <div>
-            <h1 class="logo ">Welcome back, Myles</h1>
+            <h1 class="logo ">Welcome back, {user.name}</h1>
           </div>
         </div>
         <br />
@@ -436,8 +429,8 @@ function About() {
 
       {/* //       <h1>High School Networking App</h1>
 //       <button onClick={handleLogin}>Login</button> */}
-    </>
+    </main>
   );
-}
+};
 
 export default LoggedInHome;
