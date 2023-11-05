@@ -38,7 +38,7 @@ function About({user}) {
             <p> doeja@bc.edu </p>
             <p> Computer Science </p>
           </span>
-          <span className="w-25 schools">
+          <span className="w-25 h-25 schools">
             <p> Interested Schools </p>
           </span>
           <span className="w-25 preferences">
