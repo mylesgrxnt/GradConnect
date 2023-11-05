@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.6.0",
     "mongodb": "^6.2.0",
+=======
+    "bootstrap": "^5.3.2",
+    "axios": "^1.6.0",
+>>>>>>> dad267bbb9be5da602db114af8b43d29d6656e27
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,6 +33,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "^3.0.3",
+    "sass": "^1.69.5",
     "vite": "^4.4.5"
   }
 }

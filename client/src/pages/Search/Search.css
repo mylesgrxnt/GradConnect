@@ -1,0 +1,20 @@
+.filters {
+  background-color: white;
+}
+
+.search-page {
+  background-color: white;
+}
+
+.search-main {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.user-info-section {
+  height: 90px;
+}
+
+.text-container {
+  height: max-content;
+}
