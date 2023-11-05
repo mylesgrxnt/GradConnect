@@ -54,9 +54,9 @@ margin-top: -7.5%;
 margin-left: 5%;
 }
 .bottom {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .basic {
