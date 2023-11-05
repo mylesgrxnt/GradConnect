@@ -59,14 +59,14 @@ function About() {
               <div className="grow container bg-white rounded-3 card shadow">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">
                   <img
-                    src="https://picsum.photos/150/150"
+                    src="https://picsum.photos/id/88/150/150"
                     class="rounded-circle border p-2 my-2 mt-3 "
                     width="150"
                   ></img>
                   <div class="text-container ">
                     <p class="p-0 mb-2">
                       <b>
-                        <span class="names ">Thomas Jefferson</span>
+                        <span class="names ">Sam Forde</span>
                       </b>
                       <br />
                       Boston College &#8226; Computer Science
@@ -121,19 +121,19 @@ function About() {
               <div className="grow container bg-white rounded-3 card shadow">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">
                   <img
-                    src="https://picsum.photos/150/150"
+                    src="https://picsum.photos/id/22/150/150"
                     class="rounded-circle border p-2 my-2 mt-3 "
                     width="150"
                   ></img>
                   <div class="text-container ">
                     <p class="p-0 mb-2">
                       <b>
-                        <span class="names ">Thomas Jefferson</span>
+                        <span class="names ">Roy Liao</span>
                       </b>
                       <br />
                       Boston College &#8226; Computer Science
                       <br />
-                      Brownsburg, IN
+                      Boston, MA
                     </p>
                   </div>
                   <div class="open-to-icons d-flex justify-content-evenly my-1">
@@ -183,19 +183,19 @@ function About() {
               <div className="grow container bg-white rounded-3 card shadow">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">
                   <img
-                    src="https://picsum.photos/150/150"
+                    src="https://picsum.photos/id/365/150/150"
                     class="rounded-circle border p-2 my-2 mt-3 "
                     width="150"
                   ></img>
                   <div class="text-container ">
                     <p class="p-0 mb-2">
                       <b>
-                        <span class="names ">Thomas Jefferson</span>
+                        <span class="names ">Lilly Ohr</span>
                       </b>
                       <br />
                       Boston College &#8226; Computer Science
                       <br />
-                      Brownsburg, IN
+                      Boston, MA
                     </p>
                   </div>
                   <div class="open-to-icons d-flex justify-content-evenly my-1">
@@ -245,14 +245,14 @@ function About() {
               <div className="grow container bg-white rounded-3 card shadow">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">
                   <img
-                    src="https://picsum.photos/150/150"
+                    src="https://picsum.photos/id/135/150/150"
                     class="rounded-circle border p-2 my-2 mt-3 "
                     width="150"
                   ></img>
                   <div class="text-container ">
                     <p class="p-0 mb-2">
                       <b>
-                        <span class="names ">Thomas Jefferson</span>
+                        <span class="names ">Myles Grant</span>
                       </b>
                       <br />
                       Boston College &#8226; Computer Science
@@ -269,9 +269,6 @@ function About() {
                         height="auto"
                         title="Mentoring"
                       />
-                    </div>
-                    <div class="d-flex col mx-2 p-2 justify-content-center border border-primary rounded-circle">
-                      <img src={videoIcon} width="30" height="auto" />
                     </div>
                     <div class="d-flex col mx-2 p-2 justify-content-center border border-primary rounded-circle">
                       <img src={essayIcon} width="30" height="auto" />
@@ -313,23 +310,23 @@ function About() {
               <div className="grow container bg-white rounded-3 card shadow-sm">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">
                   <img
-                    src="https://picsum.photos/150/150"
+                    src="https://picsum.photos/id/15/150/150"
                     class="rounded-circle border p-2 my-2 mt-3 "
                     width="150"
                   ></img>
                   <div class="text-container ">
                     <p class="p-0 mb-2">
                       <b>
-                        <span class="names ">Thomas Jefferson</span>
+                        <span class="names ">Mike White</span>
                       </b>
                       <br />
                       <span class="last-online">
                         <i>Last Online - Tuesday</i>
                       </span>
                       <br />
-                      Boston College &#8226; Computer Science
+                      Harvard &#8226; Chemistry
                       <br />
-                      Brownsburg, IN
+                      Albuquerque, NM
                     </p>
                   </div>
                   <div class="open-to-icons d-flex justify-content-evenly my-1">
@@ -361,13 +358,10 @@ function About() {
                     <p class="pb-2 mb-2">Interests & Involvements</p>
                     <div class="row d-flex justify-content-evenly align-items-center ">
                       <div class="col ">
-                        <p>Maker</p>
+                        <p>Pharmaceuticals</p>
                       </div>
                       <div class="col ">
-                        <p>Full Stack Developer</p>
-                      </div>
-                      <div class="col ">
-                        <p>Robotics</p>
+                        <p>Cancer Treatment</p>
                       </div>
                     </div>
                   </div>
@@ -380,23 +374,23 @@ function About() {
             <div className="grow container bg-white rounded-3 card shadow-sm">
               <div class="d-flex flex-column text-center justify-content-center align-items-center">
                 <img
-                  src="https://picsum.photos/150/150"
+                  src="https://picsum.photos/id/73/150/150"
                   class="rounded-circle border p-2 my-2 mt-3 "
                   width="150"
                 ></img>
                 <div class="text-container ">
                   <p class="p-0 mb-2">
                     <b>
-                      <span class="names ">Thomas Jefferson</span>
+                      <span class="names ">Saul Goodman</span>
                     </b>
                     <br />
                     <span class="last-online">
-                      <i>Last Online - Tuesday</i>
+                      <i>Last Online - Friday</i>
                     </span>
                     <br />
-                    Boston College &#8226; Computer Science
+                    Univ. of American Samoa &#8226; Political Science
                     <br />
-                    Brownsburg, IN
+                    Boston, MA
                   </p>
                 </div>
                 <div class="open-to-icons d-flex justify-content-evenly my-1">

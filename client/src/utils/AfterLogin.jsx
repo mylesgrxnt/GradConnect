@@ -16,9 +16,7 @@ const AfterLogin = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        if (!res.data.isProfileComplete && res.data.isMentor) {
-          navigate("/registration_info_mentor");
-        } else if (!res.data.isProfileComplete && !res.data.isMentor) {
+        if (!res.data.isProfileComplete) {
           navigate("/registration_info_student");
         } else if (res.data.isProfileComplete) {
           navigate("/landing");
