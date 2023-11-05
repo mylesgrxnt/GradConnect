@@ -9,8 +9,10 @@ const StudentSchema = new Schema(
       type: Number,
       default: 2023,
     },
+    authZeroId: { type: String, unique: true },
     major: [String],
-    reqInfoSet: { type: Boolean, default: false },
+    region: String,
+    isProfileComplete: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
